@@ -1,0 +1,13 @@
+[package]
+name = "issue-1246"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.windows]
+version = "0.23.0"
+features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_System_SystemServices",
+    "Win32_Storage_CloudFilters"
+]
