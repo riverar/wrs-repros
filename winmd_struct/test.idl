@@ -1,0 +1,10 @@
+import "oaidl.idl";
+
+namespace TestNamespace
+{
+    [experimental]
+    struct TestStruct
+    {
+        HRESULT extendedError;
+    };
+}
