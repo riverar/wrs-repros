@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.Windows.WinmdGenerator/0.41.25-preview">
+    <PropertyGroup Label="Globals">
+        <OutputWinmd>../.windows/winmd/Sample.winmd</OutputWinmd>
+        <WinmdVersion>255.255.255.255</WinmdVersion>
+        <AdditionalIncludes>$(CompiledHeadersDir);</AdditionalIncludes>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Headers Include="sample.h" />
+        <ImportLibs Include="sample.lib">
+            <StaticLibs>sample=samplestatic</StaticLibs>
+        </ImportLibs>
+
+        <Partition Include="sample.cpp">
+            <TraverseFiles>@(Headers)</TraverseFiles>
+            <Namespace>Sample</Namespace>
+            <ExcludeFromCrossarch>true</ExcludeFromCrossarch>
+        </Partition>
+    </ItemGroup>
+</Project>

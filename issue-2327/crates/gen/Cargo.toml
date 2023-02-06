@@ -1,0 +1,9 @@
+[package]
+name = "gen"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+windows-bindgen = "0.44.0"
+windows-metadata = "0.44.0"

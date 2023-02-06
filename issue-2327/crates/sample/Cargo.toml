@@ -1,0 +1,14 @@
+[package]
+name = "sample"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.windows]
+version = "0.44.0"
+features = [
+    "Win32_Foundation",
+]
+
+[dependencies.main]
+path = "../.."

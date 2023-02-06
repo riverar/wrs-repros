@@ -1,0 +1,6 @@
+*       text=auto
+*       text eol=lf
+*.winmd -text
+*.dll   -text
+*.lib   -text
+*.a     -text
